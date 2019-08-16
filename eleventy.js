@@ -1,9 +1,8 @@
-const { DateTime } = require('luxon');
-const _            = require('lodash');
-const Path         = require('path');
+const { DateTime } = require("luxon");
+const _ = require("lodash");
+const Path = require("path");
 
 module.exports = function(config) {
-
   // Add in tags, filters useful for Visual Framework installs
   // (fractal's render tag, codeblock, markdown, etc)
   // and common configuration
@@ -77,14 +76,15 @@ module.exports = function(config) {
       output: "build",
       data: "_data"
     },
-    templateFormats : [
-      "njk", "md", // note that .md files will also be parsed with njk processor
-      "css", "js" // passthrough file copying for static assets
+    templateFormats: [
+      "njk",
+      "md", // note that .md files will also be parsed with njk processor
+      "css",
+      "js" // passthrough file copying for static assets
     ],
-    htmlTemplateEngine : ["njk", "md"],
-    markdownTemplateEngine : "njk",
-    passthroughFileCopy: true,
-    pathPrefix: "/ebi-eleventy-boilerplate/" // if your site is deployed to a sub-url, otherwise comment out
+    htmlTemplateEngine: ["njk", "md"],
+    markdownTemplateEngine: "njk",
+    passthroughFileCopy: true
+    //   pathPrefix: "/ebi-eleventy-boilerplate/" // if your site is deployed to a sub-url, otherwise comment out
   };
-
 };

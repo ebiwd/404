@@ -10,7 +10,7 @@
   "author": "Ken Hawkins <ken.hawkins@embl.de> (https://www.embl.de/aboutus/communication_outreach/)",
   "main": "gulpfile.js",
   "vfConfig": {
-    "vfName": "VF Boilerplate for Eleventy",
+    "vfName": "404",
     "vfNamespace": "vfeleventy-",
     "vfComponentPath": "./src/components",
     "vfBuildDestination": "./build",
